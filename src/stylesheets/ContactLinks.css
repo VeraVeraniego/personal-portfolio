@@ -1,0 +1,19 @@
+#contact-links i{
+    padding-right: 	10px;
+    font-size: 	1.25em;
+}
+#contact-links	{
+display: 	flex;
+justify-content: 	center;
+flex-wrap: 	wrap;
+}
+#contact-links a{
+font-size: 	20px;
+text-decoration: none;
+color: 	var(--white);
+padding: 	0 1em;
+transition: all 0.3s ease-out;
+}
+#contact-links a:hover{
+transform: translateY(8px);
+}

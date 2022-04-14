@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+	--black: #171717;
+	--gray:#444 ;
+	--red: #da0037;
+	--white: #ededed;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', cursive;
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+
+#welcome-section{
+	/**/
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	/**/
+background-color: #171717;
+opacity: 0.9;
+background-image: radial-gradient(circle at top left, #444, #171717), repeating-radial-gradient(circle at top left, #444, #444, 40px, transparent 80px, transparent 40px);
+background-blend-mode: multiply;
+}
+h1{
+	font-size: 50px;
+	color: #ededed;
+}
+#presentation{
+	color: #da0037;
+	font-size: 25px;
+}
+
+
+/*Project grid*/
+
+#projects{
+background-color: #ededed;
+opacity: 1;
+background: radial-gradient(circle, transparent 20%, #ededed 20%, #ededed 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ededed 20%, #ededed 80%, transparent 80%, transparent) 62.5px 62.5px, linear-gradient(#cacaca 5px, transparent 5px) 0 -2.5px, linear-gradient(90deg, #cacaca 5px, #ededed 5px) -2.5px 0;
+background-size: 125px 125px, 125px 125px, 62.5px 62.5px, 62.5px 62.5px;
+background-color: #444;
+text-align: center;
+padding-bottom: 5em;
+}
+
+#h2-projects{
+	font-size: 30px;
+	color: var(--black);
+	border-bottom: 2px solid;
+	font-weight: 700;
+	max-width: 50%;
+	margin: 0 auto 90px auto;
+	padding: 3em 0 10px 0;
+}
+
+.project-grid{
+	--n-cols: 2;
+	--row-height: 400px;
+	display: grid;
+	justify-content: center;
+	grid-auto-rows: var(--row-height);
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	padding: 10px auto 200px;
+	gap: 60px 30px;
+	margin: 20px 10%;
+}
+
+
+@media screen and (max-width: 900px){
+	.project-grid{
+		--row-height: 300px;
+		--n-cols: 1;
+		margin: 20px 2%;
+	}
+}
+ 
+
+ /*Contact*/
+
+#contact{
+	background-color: #171717;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center	;
+}
+#contact h2{
+	font-size: 60px;
+	color: var(--white);
+
+	margin: none;
+	padding: none;
+}
+#contact p{
+	color: var(--white);
+	font-size: 25px;
+	padding-bottom:35px 	;
+}
+
+
+
+/*footer*/
+
+footer {
+color: var(--white);
+justify-self: flex-end;
+text-align: center;
+padding: 2em;
+background-color: var(--gray);
+}
