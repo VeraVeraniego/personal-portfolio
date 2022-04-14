@@ -13,7 +13,7 @@ function App() {
       <div id="container">
 
         <section id="welcome-section">
-          <h1>Hello I am VeraVeraniego</h1>
+          <h1>Hello I am BrayanVeraniego</h1>
           <p id="presentation">A frontend web developer, aspiring fullstack and web3 dev.</p>
         </section>
 
